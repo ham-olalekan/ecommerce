@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema(
     },
     gender: {
       type: String,
-      required: false,
+      required: true,
     },
     address: {
       type: String,
@@ -75,7 +75,7 @@ function validateUserObject(user) {
     email: Joi.string().min(5).max(255).required().email(),
     password: Joi.string().min(5).max(255).required(),
     address: Joi.string().min(5).max(255),
-    gender: Joi.string().min(4).max(6)
+    gender: Joi.string().min(4).max(6).required()
   };
 
   return Joi.validate(user, schema);
