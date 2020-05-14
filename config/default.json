@@ -1,0 +1,6 @@
+{
+    "jwtPrivateKey": "crazyasspassword419",
+    "db": "mongodb://localhost/youverify",
+    "port": "3500",
+    "requiresAuth": false
+  }
