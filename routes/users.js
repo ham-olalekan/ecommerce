@@ -1,11 +1,13 @@
 const express = require("express");
+const config = require('config');
+const jwt = require("jsonwebtoken");
 const router = express.Router();
 const _ = require("lodash");
 const { createUser } = require("../services/userService");
 /**
  * endpoint to create a new user
  */
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
   const user = req.body;
 
   try {
@@ -23,5 +25,4 @@ router.post("/", async (req, res) => {
     });
   }
 });
-
 module.exports = router;
