@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const OrderStatus = require("../models/utils/orderStatus");
-const { productSchema } = require("../models/product");
+const OrderStatus = require("./orderStatus");
+const { productSchema } = require("../product");
 
 const orderSchema = new mongoose.Schema(
   {
