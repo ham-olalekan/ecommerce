@@ -35,6 +35,9 @@ const productSchema = new mongoose.Schema(
     size: {
       required: false,
     },
+    imagesUrl: [{
+      type: String
+    }]
   },
   {
     timestamps: true,
@@ -69,3 +72,4 @@ function validate(product) {
 
 exports.Product = Product;
 exports.validateProduct = validate;
+exports.productSchema = productSchema;
