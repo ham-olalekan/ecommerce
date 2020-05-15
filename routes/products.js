@@ -1,9 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const {
-  getAllProducts,
-  getProductById,
-} = require("../services/productService");
+const { getAllProducts, getProductById } = require("../services/productService");
 const validateObjectId = require("../middlewares/validateObjectId");
 
 router.get("/", async (req, res) => {
