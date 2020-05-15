@@ -4,7 +4,8 @@
   "description": "\"A simple e-commerce API\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --watchAll --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,9 @@
     "mongoose": "^5.9.14",
     "mongoose-paginate": "^5.0.3",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "supertest": "^3.0.0"
   }
 }
